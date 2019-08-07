@@ -3,8 +3,12 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 5s linear;
+  animation: bounce 0.7s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;
   height: 20vmin;
+  margin-bottom: 10rem;
   pointer-events: none;
 }
 
@@ -53,12 +57,19 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
+  align-items: center;
 
+}
 .storeimg{
   flex: 1;
-  width: 15rem;
-  padding-top: 20px;
+  height: 3.5rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.googlestoreimg{
+  flex: 1;
+  height: 5rem;
   cursor: pointer;
 }
 
@@ -84,4 +95,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes bounce {
+  from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+  to   { -webkit-transform: translate3d(0, 12.2rem, 0); transform: translate3d(0, 12.2rem, 0); }
 }
