@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from './GENERIC.png';
 import appstore from './appstore.svg';
-import './App.css';
+import './App.scss';
 import ScrollableAnchor from 'react-scrollable-anchor';
+
 
 function App() {
   return (
-    <div className="App">
+      <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -14,30 +15,99 @@ function App() {
         </p>
       </header>
       <ScrollableAnchor id={'games'}>
-      <div className="games">
-        <div className="basketball">
-          <h2>On Paper Sports Basketball '20</h2>
-          <p>Available Now!</p>
-          <div className="vid-container">
-          <iframe className="iframe" src="https://www.youtube.com/embed/AySQYTJunPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div className="games">
+          <div className="games_game">
+            <h2>On Paper Sports Basketball '20</h2>
+            <p>Available Now!</p>
+            <div className="videoWrapper">
+              <iframe className="videoWrapper iframe" src="https://www.youtube.com/embed/lqPBb4z_EZw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div className="links">
+              <a href='https://play.google.com/store/apps/details?id=com.chadbanfield.onpapersportsbasketball20&hl=en_US&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img class="googlestoreimg" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' /></a>
+              <a href='https://apps.apple.com/us/app/on-paper-sports-basketball-20/id1462680635?mt=8'><img class="storeimg" alt='Get it on The App Store' src={appstore} /></a>
+            </div>
           </div>
-          <div className="links">
-          <a href='https://play.google.com/store/apps/details?id=com.chadbanfield.onpapersportsbasketball20&hl=en_US&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img class="googlestoreimg" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-          <a href='https://apps.apple.com/us/app/on-paper-sports-basketball-20/id1462680635?mt=8'><img class="storeimg" alt='Get it on The App Store' src={appstore}/></a>
+          <div className="games_game">
+            <h2>On Paper Sports Hockey '20</h2>
+            <p>Available Now!</p>
+            <div className="videoWrapper">
+              <iframe className="videoWrapper iframe" src="https://www.youtube.com/embed/cqok5N4kLes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div className="games_game">
+            <h2>On Paper Sports Football '20</h2>
+            <p>Available Now!</p>
+            <div className="videoWrapper">
+              <iframe className="videoWrapper iframe" src="https://www.youtube.com/embed/cqok5N4kLes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
-        <div className ="hockey">
-          <h2>On Paper Sports Hockey '20</h2>
-          <p>Coming Soon!</p>
+      </ScrollableAnchor>
+
+      <ScrollableAnchor id={'privacypolicy'}>
+        <div className="privacy-policy" id="privacy-policy">
+          <h1>Privacy Policy</h1>
+          <p>Chad Banfield built the On Paper Sports app as a Commercial app. This SERVICE is provided by Chad Banfield and is intended for use as is.
+
+    This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
+
+    If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
+
+    The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at On Paper Sports unless otherwise defined in this Privacy Policy.
+
+    Information Collection and Use
+
+    For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
+
+    The app does use third party services that may collect information used to identify you.
+
+    Link to privacy policy of third party service providers used by the app
+
+    Google Play Services
+    AdMob
+    Log Data
+
+    I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
+
+    Cookies
+
+    Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+
+    This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+
+    Service Providers
+
+    I may employ third-party companies and individuals due to the following reasons:
+
+    To facilitate our Service;
+    To provide the Service on our behalf;
+    To perform Service-related services; or
+    To assist us in analyzing how our Service is used.
+    I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+
+    Security
+
+    I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+
+    Links to Other Sites
+
+    This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+
+    Children’s Privacy
+
+    These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.
+
+    Changes to This Privacy Policy
+
+    I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
+
+    Contact Us
+
+    If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at onpapersports@outlook.com.
+
+This privacy policy page was created at privacypolicytemplate.net and modified/generated by App Privacy Policy Generator</p>
         </div>
-        </div>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'privacypolicy'}>
-      <div className="privacy-policy" id="privacy-policy">
-      <h1>Privacy Policy</h1>
-      <p>This is the privacy policy for all On Paper Sports applications, none of your personal data is stored or collected in any way! So go have fun worry free!</p>
-        </div>
-        </ScrollableAnchor>
+      </ScrollableAnchor>
 
     </div>
   );

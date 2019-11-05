@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/onpapersports/static/css/main.395d5641.chunk.css",
+    "main.js": "/onpapersports/static/js/main.fd32a612.chunk.js",
+    "main.js.map": "/onpapersports/static/js/main.fd32a612.chunk.js.map",
+    "runtime~main.js": "/onpapersports/static/js/runtime~main.50b094ac.js",
+    "runtime~main.js.map": "/onpapersports/static/js/runtime~main.50b094ac.js.map",
+    "static/js/2.c3e390ee.chunk.js": "/onpapersports/static/js/2.c3e390ee.chunk.js",
+    "static/js/2.c3e390ee.chunk.js.map": "/onpapersports/static/js/2.c3e390ee.chunk.js.map",
+    "index.html": "/onpapersports/index.html",
+    "precache-manifest.217b9611f4988c2f14d6a6140ea88f0d.js": "/onpapersports/precache-manifest.217b9611f4988c2f14d6a6140ea88f0d.js",
+    "service-worker.js": "/onpapersports/service-worker.js",
+    "static/css/main.395d5641.chunk.css.map": "/onpapersports/static/css/main.395d5641.chunk.css.map",
+    "static/media/GENERIC.png": "/onpapersports/static/media/GENERIC.f3eefa7c.png",
+    "static/media/appstore.svg": "/onpapersports/static/media/appstore.2928664f.svg"
+  }
+}

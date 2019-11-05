@@ -1,0 +1,65 @@
+//Variables
+$color-white: #f3f3f3;
+$color-black: rgb(30,30,30);
+$color-gray: rgb(200,200,200);
+$color-primary: #2E5495;
+
+
+.navbar{
+    background-color: $color-white;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 5vh;
+    border-bottom: 1px solid $color-gray;
+
+    &_logo{
+        width: 10rem;
+        margin: 0.5rem;
+        display: inline-block;
+    }
+
+    &_links{
+        display: inline-block;
+    }
+
+    & ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $color-white;
+    }
+
+    & li{
+        float: left;
+        // border-right: 1px solid $color-black;
+        &:last-child{
+        border-right: none;
+        }
+
+        & a{
+            display: block;
+            color: $color-black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: all 0.3s;
+
+            &:hover:not(.active){
+            //NOT ACTIVE STYLES IF EVER USED
+            }
+
+            &:hover {
+              background-color: $color-gray;
+            //   border-right: 1px solid black;
+            //   border-left: 1px solid black;
+              transform: scale(1.1);
+            }
+
+            &:active{
+              transform: translateY(0.2rem);
+          }
+}
+    }
+}
